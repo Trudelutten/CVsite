@@ -1,84 +1,99 @@
 
 {
-	"first_name": "Craig",
-	"last_name": "Marais",
-	"date_of_birth": "12 June 1985",
+	"first_name": "Trude",
+	"last_name": "Bjørgås Hjelmeland",
+	"date_of_birth": "15 September 1986",
 	"title": "Full Stack Java developer",
 	"email" : "Trude.Hjelmeland@no.experis.com",
 	"experience": 
 	[
 		{
-			"title": "Lecturer",
-			"employer": "Noroff",
-			"start_date":"September 2018",
+			"title": "Full stack java developer",
+			"employer": "Experis",
+			"start_date":"February 2019",
 			"end_date":"",
 			"city": "Oslo",
 			"country": "Norway",
-			"description": "Primary instructor for a number of short course offerings."
+			"description": "Working as a consultant for Experis."
 
 		},
 		{
-			"title": "Project Supervisor",
-			"employer": "Nelson Mandela University",
-			"start_date":"May 2018",
-			"end_date":"September 2018",
-			"city": "Port Elizabeth",
-			"country": "South Africa",
-			"description": "Supervisor for six groups of 3rd year projects in the School of ICT."
+			"title": "Developer",
+			"employer": "House of Guarantees AS",
+			"start_date":"November 2018",
+			"end_date":"February 2019",
+			"city": "Oslo",
+			"country": "Norway",
+			"description": "Developed automatisation tools for underwriters."
 		},
 		{
-			"title": "Programmer",
-			"employer": "Nelson Mandela University",
-			"start_date":"July 2017",
-			"end_date":"March 2018",
-			"city": "Port Elizabeth",
-			"country": "South Africa",
-			"description": "EEESCHEP Project website and content development for the eNtsa group."
-		},
-		{
-			"title": "Programmer",
-			"employer": "Fuzzy Logic",
-			"start_date":"February 2016",
-			"end_date":"May 2016",
-			"city": "George",
-			"country": "South Africa",
-			"description": "I worked primarily in C# on a bespoke project for an international client (subject to NDA)."
+			"title": "Technical Developer",
+			"employer": "Argos Solutions ASD",
+			"start_date":"October 2017",
+			"end_date":"January 2019",
+			"city": "Kongsberg",
+			"country": "Norway",
+			"description": "R&D of a sensor for surveillance of automated plywood production."
 		}
 	],
 	"education" : 
 	[
 		{
-			"qualification" : "Master of Technology",
-			"start_year" : "2012",
-			"end_year" : "2013",
-			"institution" : "Nelson Mandela Metropolitan University",
-			"description" : "Dissertation topic: Guidelines for the use of the Indie approach in game development projects in the context of a capstone experience"
+			"qualification" : "Master in Physics",
+			"start_year" : "August 2016",
+			"end_year" : "June 2018",
+			"institution" : "University of Oslo",
+			"description" : "Dissertation topic: Spintronic for use in quantum computers."
+		}, 
+		{
+			"qualification" : "Bachelor in Physics",
+			"start_year" : "August 2013",
+			"end_year" : "June 2016",
+			"institution" : "University of Oslo",
+			"description" : "Physics, Math and Informatics."
+		}, 
+		{
+			"qualification" : "Bachelor in Economics and Management",
+			"start_year" : "August 2006",
+			"end_year" : "June 2010",
+			"institution" : "Norwegian Business School",
+			"description" : "Strategic and analytical thinking."
 		}
 	], 
 	"proLinks" : 
 	[ 
 		{
-			"title" : "linkedIn",
-			"linken" : "https://www.linkedin.com/",
-			"imgSRC" : "https://ulidigitalmarketing.blob.core.windows.net/ulidcnc/2018/12/2000px-Linkedin_Shiny_Icon.svg_.png"
+			"title" : "gitHub",
+			"linken" : "https://github.com/Trudelutten",
+			"imgSRC" : "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
 		}, 
 		{
-			"title" : "gitHub",
-			"linken" : "https://www.github.com",
-			"imgSRC" : "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
+			"title" : "linkedIn",
+			"linken" : "https://www.linkedin.com/in/trude-bjørgås-hjelmeland/",
+			"imgSRC" : "https://ulidigitalmarketing.blob.core.windows.net/ulidcnc/2018/12/2000px-Linkedin_Shiny_Icon.svg_.png"
 		}
 	], 
 	"technologies" : 
 	[
 		{
-			"name" : "Name of a Technology", 
+			"name" : "Java", 
 			"description" : "Describing the technology", 
-			"img" : ""
+			"img" : "http://icons.iconarchive.com/icons/icons8/ios7/72/Logos-Java-Coffee-Cup-Logo-Copyrighted-icon.png"
 		},
 		{
-			"name" : "Name of a Technology", 
+			"name" : "NodeJS", 
 			"description" : "Describing the technology",
-			"img" : ""
+			"img" : "https://jaystack.com/wp-content/uploads/2015/12/nodejs-logo-e1497443346889.png"
+		}, 
+		{
+			"name" : "Python", 
+			"description" : "Describing the technology", 
+			"img" : "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png"
+		},
+		{
+			"name" : "C++", 
+			"description" : "Describing the technology", 
+			"img" : "https://www.ebuddyblog.com/wp-content/uploads/2017/02/c-logo.png"
 		}
 	], 
 	"publications" : 
@@ -86,14 +101,20 @@
 		{
 			"title" : "Effect of spin injection from colossal magnetoresistance material into superconducting thin film of YBa2Cu3O7-δ",
 			"description" : "",
-			"url" : "",
-			"date" : ""
+			"url" : "https://www.duo.uio.no/handle/10852/66586",
+			"date" : "Descember 2018"
 		},
 		{
-			"title" : "",
+			"title" : "Interplay between superconductivity and spin polarization in thin-film bilayers - An experimental study",
+			"description" : "Master thesis.",
+			"url" : "http://urn.nb.no/URN:NBN:no-65971",
+			"date" : "June 2018"
+		},
+		{
+			"title" : "Interplay Between Spin Polarization and Superconductivity in an ex-situ Bilayer La0.67Ca0.33MnO3– YBa2Cu3O7-δ",
 			"description" : "",
-			"url" : "",
-			"date" : ""
+			"url" : "https://ieeexplore.ieee.org/document/8190363",
+			"date" : "Descember 2017"
 		}
 	]
 }

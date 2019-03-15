@@ -11,12 +11,17 @@ html
 	
 	body(style="background-image: url('http://wallpaperheart.com/wp-content/uploads/2018/04/globe-professional-background-images-hd.jpg'); background-size:100% auto; ")
     
-		div(class="sidenav" style="opacity: .9; height: 100%; width: 200px; position: fixed; z-index: 1; top: 0; left: 0; background-color: blue; overflow-x: hidden; padding-top: 80px;")
-			img(src="https://i2-prod.mirror.co.uk/incoming/article10263400.ece/ALTERNATES/s1200/PROD-Kim-Jong-Un.jpg" class="mx-auto d-block" alt="profil_picture" style="border-radius:80%; max-width: 100%; height: 50%; ")
-			a(class="font-weight-bold" style="opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 20px; color: black; display: block;") #{first_name} #{last_name}
-			a(class="font-weight-bold" style="opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 15px; color: black; display: block;") #{title}
-			a(class="font-weight-light" style="opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 10px; color: black; display: block;") #{date_of_birth}
-			a(class="font-weight-bold" style="opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 10px; color: black; display: block;") #{email}
+		div(class="sidenav" style="opacity: .9; height: 100%; width: 300px; position: fixed; z-index: 1; top: 0; left: 0; background-color: blue; overflow-x: hidden; padding-top: 80px;")
+			img(src="CV bilde Trude.jpg" class="mx-auto d-block" alt="profil_picture" style="border-radius:80%; max-width: 100%; height: 50%; border:5px solid black;")
+			a(class="font-weight-bold" style="text-align:center; opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 20px; color: black; display: block;") #{first_name} #{last_name}
+			a(class="font-weight-bold" style="text-align:center; opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 15px; color: black; display: block;") #{title}
+			a(class="font-weight-light" style="text-align:center; opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 10px; color: black; display: block;") #{date_of_birth}
+			a(class="font-weight-bold" style="text-align:center; opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 10px; color: black; display: block;") #{email}
+			
+			each link in proLinks
+				a(href=link.linken target="_blank")
+					img( src=link.imgSRC style="display: block;  margin-left: auto; margin-right: auto; height: auto; width: 15%; padding: 6px 8px 6px 16px;")
+					
 		
 		block content
 			nav.navbar.sticky-top.navbar-expand-lg.navbar-invert(style="opacity: .9; border-radius:25px; background-color:black; padding-left: 60%")
@@ -37,7 +42,7 @@ html
 			hr
 			h1(id="Experience" style="text-align:center") Work experience
 			hr
-			div(class="card-group" style="opacity: .7; padding-left:200px")
+			div(class="card-group" style="opacity: .7; padding-left:300px")
 				div(class="colum" style="float: center; width: 100%;")
 					each job in experience
 
@@ -50,7 +55,7 @@ html
 			hr
 			h2(id="Education" style ="text-align:center") Education
 			hr
-			div(class="card-group" style="opacity: .7; padding-left:200px")
+			div(class="card-group" style="opacity: .7; padding-left:300px")
 
 				each school in education
 					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:black")
@@ -58,42 +63,31 @@ html
 							h5(class ="card-title") #{school.qualification}
 							p(class ="card-content") #{school.institution}
 							p(class ="card-text") #{school.description}
+			
+			hr
+			h2(id="publications" style ="text-align:center") Publications
+			hr
+			div(class="card-group" style="opacity: .7; padding-left:300px")
+
+				each pub in publications
+					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:black")
+						div(class="card-body" style="background-color:cyan; border-radius:15px; border-width:5px; border-color:black")
+							h5(class ="card-title") #{pub.title}
+							p(class ="card-content") #{pub.description}
+							p(class ="card-text") #{pub.date}
+							a(href=pub.url class="card-link") Link
 
 			hr
-			h2(id="technologies" style ="text-align:center") Technology
+			h2(id="technologies" style ="text-align:center") Languages
 			hr
-			div(class="card-group" style="opacity: .7; padding-left:200px")
+			div(class="card-group" style="opacity: .7; padding-left:300px")
 
 				each tech in technologies
 					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:black")
 						div(class="card-body" style="background-color:cyan; border-radius:15px; border-width:5px; border-color:black")
 							h5(class ="card-title") #{tech.name}
-							p(class ="card-content") #{tech.description}
-							p(class ="card-text") #{tech.img}
-
-			hr
-			h2(id="publications" style ="text-align:center") Publications
-			hr
-			div(class="card-group" style="opacity: .7; padding-left:200px")
-
-				each pub in publications
-					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:black")
-						div(class="card-body" style="background-color:cyan; border-radius:15px; border-width:5px; border-color:black")
-							h5(class ="card-title") #{pub.name}
-							p(class ="card-content") #{pub.description}
-							p(class ="card-text") 
-								a(href=pub.url class="card-link") Link
-
-			hr
-			div(class="card-group" style="opacity: .7; padding-left:200px")
-						each link in proLinks
-							div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:black")
-								div(class="card-body" style="background-color:cyan; border-radius:15px; border-width:5px; border-color:black")
-									a(href=link.linken class="card-link")
-										img( class="card-img-top smallimg mx-auto" src=link.imgSRC style="height: auto; width: 15%; padding: 6px 8px 6px 16px;")
-									
-
-									
+							img( class="card-img-top smallimg mx-auto" src=tech.img style="height: auto; width: 50%; padding: 6px 8px 6px 16px;")
+							
 									
 							
 		block foot
