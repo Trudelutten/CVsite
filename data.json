@@ -65,7 +65,7 @@
 		{
 			"title" : "gitHub",
 			"linken" : "https://www.github.com",
-			"imgSRC" : "githubLogo.png"
+			"imgSRC" : "https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png"
 		}
 	], 
 	"technologies" : 
@@ -84,14 +84,16 @@
 	"publications" : 
 	[
 		{
-			"title" : "",
+			"title" : "Effect of spin injection from colossal magnetoresistance material into superconducting thin film of YBa2Cu3O7-δ",
 			"description" : "",
-			"url" : ""
+			"url" : "",
+			"date" : ""
 		},
 		{
 			"title" : "",
 			"description" : "",
-			"url" : ""
+			"url" : "",
+			"date" : ""
 		}
 	]
 }
