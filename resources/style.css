@@ -1,3 +1,5 @@
-.body{
-    color: black;
+P.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
 }
