@@ -3,18 +3,18 @@
 	"first_name": "Trude",
 	"last_name": "Bjørgås Hjelmeland",
 	"date_of_birth": "15 September 1986",
-	"title": "Full Stack Java developer",
+	"title": "Full-Stack Java developer",
 	"email" : "Trude.Hjelmeland@no.experis.com",
 	"experience": 
 	[
 		{
-			"title": "Full stack java developer",
-			"employer": "Experis",
+			"title": "Full-Stack Java developer",
+			"employer": "Experis Academy",
 			"start_date":"February 2019",
 			"end_date":"",
 			"city": "Oslo",
 			"country": "Norway",
-			"description": "Working as a consultant for Experis."
+			"description": "Consultant for Experis."
 
 		},
 		{
@@ -28,7 +28,7 @@
 		},
 		{
 			"title": "Technical Developer",
-			"employer": "Argos Solutions ASD",
+			"employer": "Argos Solutions AS",
 			"start_date":"October 2017",
 			"end_date":"January 2019",
 			"city": "Kongsberg",

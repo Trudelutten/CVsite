@@ -9,10 +9,10 @@ html
 			script(src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=", crossorigin="anonymous")
 			script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
 	
-	body(style="background-image: url('http://wallpaperheart.com/wp-content/uploads/2018/04/globe-professional-background-images-hd.jpg'); background-size:100% auto; ")
+	body(style="background-image: url('https://wpmisc.com/sites/default/files/wallpaper/abstract/66133/ice-texture-hd-wallpapers-66133-4351307.png'); background-size:100% auto; ")
     
-		div(class="sidenav" style="opacity: .9; height: 100%; width: 300px; position: fixed; z-index: 1; top: 0; left: 0; background-color: blue; overflow-x: hidden; padding-top: 80px;")
-			img(src="CV bilde Trude.jpg" class="mx-auto d-block" alt="profil_picture" style="border-radius:80%; max-width: 100%; height: 50%; border:5px solid black;")
+		div(class="sidenav" style="opacity: .9; height: 100%; width: 300px; position: fixed; z-index: 1; top: 0; left: 0; background-color: e5e8e8; overflow-x: hidden; padding-top: 80px;")
+			img(src="CV bilde Trude.jpg" class="mx-auto d-block" alt="profil_picture" style="border-radius:80%; max-width: 100%; height: 50%; border:5px solid lightgray;")
 			a(class="font-weight-bold" style="text-align:center; opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 20px; color: black; display: block;") #{first_name} #{last_name}
 			a(class="font-weight-bold" style="text-align:center; opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 15px; color: black; display: block;") #{title}
 			a(class="font-weight-light" style="text-align:center; opacity: .7; padding: 6px 8px 6px 16px; text-decoration: none; font-size: 10px; color: black; display: block;") #{date_of_birth}
@@ -24,7 +24,7 @@ html
 					
 		
 		block content
-			nav.navbar.sticky-top.navbar-expand-lg.navbar-invert(style="opacity: .9; border-radius:25px; background-color:black; padding-left: 60%")
+			nav.navbar.sticky-top.navbar-expand-lg.navbar-invert(style="opacity: .95; border-radius:25px; background-color:9fa0a0; padding-left: 60%")
 				a.navbar-brand(href='#') 
 				button.navbar-toggler(aria-expanded='true', aria-controls='navbarText', aria-label='Toggle navigation', type='button', data-toggle='collapse', data-target='#navbarText')
 					span.navbar-toggler-icon
@@ -38,54 +38,55 @@ html
 							a.nav-link(href='#Links') Links
 					span.navbar-text #{first_name}'s CV Site
 
-			h1(class="font-weight-bold" id="Experience" style="text-align:center; font-size:50px") #{title}
+			h1(class="font-weight-bold" id="Experience" style="margin-left:45%; margin-right:auto font-size:50px; color:rgb(120, 120, 120)") #{title}
 			hr
-			h1(id="Experience" style="text-align:center") Work experience
+			h1(id="Experience" style="margin-left:50%; margin-right:auto; color:rgb(120, 120, 120)" class="font-weight-bold") Work experience
 			hr
 			div(class="card-group" style="opacity: .7; padding-left:300px")
 				div(class="colum" style="float: center; width: 100%;")
 					each job in experience
 
-						div(class = "card" style="text-align:center; border-radius:15px; border-width:5px; border-color:black;") 
-							div(class="card-body" style="background-color:cyan; border-radius:10px")
-								h5(class ="card-title") #{job.title}
-								p(class="card-content") #{job.employer}
+						div(class = "card" style="text-align:center; border-radius:15px; border-width:5px; border-color:9fa0a0;") 
+							div(class="card-body" style="background-color:ebebeb; border-radius:10px")
+								h5(class ="card-title font-weight-bold") #{job.title}
+								p(class="card-content font-weight-bold") #{job.employer}
 								p(class="card-text") #{job.start_date} - #{job.end_date} 
 								p(class="card-text") #{job.description}	
 			hr
-			h2(id="Education" style ="text-align:center") Education
+			h2(id="Education" style ="margin-left:50%; margin-right:auto; color:rgb(120, 120, 120)" class="font-weight-bold") Education
 			hr
 			div(class="card-group" style="opacity: .7; padding-left:300px")
 
 				each school in education
-					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:black")
-						div(class="card-body" style="background-color:cyan; border-radius:15px; border-width:5px; border-color:black")
-							h5(class ="card-title") #{school.qualification}
+					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:9fa0a0")
+						div(class="card-body" style="background-color:e5e8e8; border-radius:15px; border-width:5px; border-color:9fa0a0")
+							h5(class ="card-title font-weight-bold") #{school.qualification}
 							p(class ="card-content") #{school.institution}
+							p(class ="card-text") #{school.start_year} #{school.end_year}
 							p(class ="card-text") #{school.description}
 			
 			hr
-			h2(id="publications" style ="text-align:center") Publications
+			h2(id="publications" style ="margin-left:50%; margin-right:auto; color:rgb(120, 120, 120)" class="font-weight-bold") Publications
 			hr
 			div(class="card-group" style="opacity: .7; padding-left:300px")
 
 				each pub in publications
-					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:black")
-						div(class="card-body" style="background-color:cyan; border-radius:15px; border-width:5px; border-color:black")
+					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:9fa0a0")
+						div(class="card-body" style="background-color:e5e8e8; border-radius:15px; border-width:5px; border-color:9fa0a0")
 							h5(class ="card-title") #{pub.title}
 							p(class ="card-content") #{pub.description}
 							p(class ="card-text") #{pub.date}
 							a(href=pub.url class="card-link") Link
 
 			hr
-			h2(id="technologies" style ="text-align:center") Languages
+			h2(id="technologies" style ="margin-left:50%; margin-right:auto; color:rgb(120, 120, 120)" class="font-weight-bold") Languages
 			hr
 			div(class="card-group" style="opacity: .7; padding-left:300px")
 
 				each tech in technologies
-					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:black")
-						div(class="card-body" style="background-color:cyan; border-radius:15px; border-width:5px; border-color:black")
-							h5(class ="card-title") #{tech.name}
+					div(class = "card" style="width: 18rem; text-align:center; border-radius:15px; border-width:5px; border-color:9fa0a0")
+						div(class="card-body" style="background-color:e5e8e8; border-radius:15px; border-width:5px; border-color:9fa0a0")
+							h5(class ="card-title font-weight-bold") #{tech.name}
 							img( class="card-img-top smallimg mx-auto" src=tech.img style="height: auto; width: 50%; padding: 6px 8px 6px 16px;")
 							
 									
